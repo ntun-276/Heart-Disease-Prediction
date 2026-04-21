@@ -59,5 +59,38 @@ Data Source: https://www.kaggle.com/code/farzadnekouei/heart-disease-prediction
 |  SVM  |     0.94      |     0.73      |    0.57    |    0.97    |  0.71  |  0.83  |         0.83          |        0.77        |      0.77      |    0.79    |
 
 
+## Project Structure (Refactored)
+
+```text
+src/
+  data_processing/
+    load_data.py
+    preprocess.py
+  feature_engineering/
+    build_features.py
+  models/
+    train.py
+    predict.py
+  evaluation/
+    evaluate.py
+  utils/
+    helpers.py
+main.py
+requirements.txt
+```
+
+## Quick Start
+
+```powershell
+python -m pip install -r requirements.txt
+python main.py
+```
+
+## Output Artifacts
+
+- Trained models are saved to `models/`.
+- Evaluation results are saved to `reports/model_results.csv`.
+- Best model metadata is saved to `reports/best_model.json`.
+
 ## 📫 Contact me:
 📧 <a href="#"> ntruynhi276@gmail.com </a>
