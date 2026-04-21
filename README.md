@@ -59,24 +59,47 @@ Data Source: https://www.kaggle.com/code/farzadnekouei/heart-disease-prediction
 |  SVM  |     0.94      |     0.73      |    0.57    |    0.97    |  0.71  |  0.83  |         0.83          |        0.77        |      0.77      |    0.79    |
 
 
-## Project Structure (Refactored)
+## 📑 Project Organization:
 
 ```text
-src/
-  data_processing/
-    load_data.py
-    preprocess.py
-  feature_engineering/
-    build_features.py
-  models/
-    train.py
-    predict.py
-  evaluation/
-    evaluate.py
-  utils/
-    helpers.py
-main.py
-requirements.txt
+├── LICENSE
+├── README.md
+├── data/
+│   └── heart.csv
+│
+├── models
+├── notebooks/
+│   ├── 01_eda.ipynb
+│   ├── 02_preprocessing.ipynb
+│   └── 03_modeling.ipynb
+│
+├── reports
+│   ├── best_model.json
+│   ├── model_results.csv
+│   └── figures
+│
+├── src/
+│    ├── __init__.py
+│    │
+│    ├── data_processing/
+│    │    ├── load_data.py
+│    │    └── preprocess.py
+│    │
+│    ├── feature_engineering/
+│    │    └── build_features.py
+│    │
+│    ├── models/
+│    │    ├── train.py
+│    │    └── predict.py
+│    │
+│    ├── evaluation/
+│    │    └── evaluate.py
+│    │
+│    └── utils/
+│         └── helpers.py
+│
+├── main.py
+└── requirements.txt
 ```
 
 ## Quick Start
